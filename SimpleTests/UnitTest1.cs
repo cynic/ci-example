@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using Simple;
 
 namespace Tests
 {
@@ -12,7 +13,9 @@ namespace Tests
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            Program p = new Program();
+            string result = p.Reverse("MooCow");
+            Assert.AreEqual("woCooM", result);
         }
     }
 }
