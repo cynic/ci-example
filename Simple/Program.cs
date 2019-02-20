@@ -5,6 +5,7 @@ namespace Simple
     public class Program
     {
         public string Reverse(string input) {
+            if (input == null) return null;
             string output = "";
             for (int i = input.Length-1; i >= 0; --i) {
                 output += input[i];
